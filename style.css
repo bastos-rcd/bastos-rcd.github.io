@@ -209,6 +209,82 @@ nav ul li a:hover {
     font-style: oblique;
 }
 
+/* Compétences */
+
+#competences {
+    background-color: #e1ca96d4;
+    border-radius: 10px;
+    display: table;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    max-width: 98%;
+    width: 100%;
+    text-align: center;
+}
+
+.informatique {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.logo {
+    width: 80px;
+    margin: 0%;
+    transition: transform .3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+progress {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 800px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgba(128, 128, 128, 0.769);
+}
+
+.java::-webkit-progress-value {
+    background-color: #FBAD28;
+}
+
+.cplus::-webkit-progress-value {
+    background-color: #288DD5;
+}
+
+.python::-webkit-progress-value {
+    background-color: #F8ED3D;
+}
+
+.html::-webkit-progress-value {
+    background-color: #FF5E11;
+}
+
+.css::-webkit-progress-value {
+    background-color: #1066F6;
+}
+
+.php::-webkit-progress-value {
+    background-color: #7D8CDA;
+}
+
+.sql::-webkit-progress-value {
+    background-color: #52AFBE;
+}
+
+.bash::-webkit-progress-value {
+    background-color: #505657;
+}
+
+.uml::-webkit-progress-value {
+    background-color: #765AD5;
+}
 
 
 
