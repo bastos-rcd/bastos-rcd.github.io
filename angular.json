@@ -36,11 +36,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/bastos-rcd.github.io",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -55,12 +55,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -79,9 +74,12 @@
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -90,10 +88,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bastos-rcd.github.io:build:production"
+              "browserTarget": "bastos-rcd.github.io:build:production"
             },
             "development": {
-              "buildTarget": "bastos-rcd.github.io:build:development"
+              "browserTarget": "bastos-rcd.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +99,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "bastos-rcd.github.io:build"
+            "browserTarget": "bastos-rcd.github.io:build"
           }
         },
         "test": {
@@ -126,6 +124,6 @@
     }
   },
   "cli": {
-    "analytics": "902e8b1e-0fed-434e-a1a1-b22f917af919"
+    "analytics": "c0067ba0-f3e3-485a-8097-976677f412e1"
   }
 }
