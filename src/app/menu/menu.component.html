@@ -7,7 +7,14 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" routerLink="/"><i class="fa-solid fa-house"></i> Accueil</a>
+                    <a class="nav-link" routerLink="/" (click)="onChangePage()" [ngClass]="{
+                        'active': onPage == page.HOME
+                    }"><i class="fa-solid fa-house"></i> Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/career" (click)="onChangePage()" [ngClass]="{
+                        'active': onPage == page.CAREER
+                    }"><i class="fa-solid fa-person-chalkboard"></i> Parcours</a>
                 </li>
             </ul>
         </div>

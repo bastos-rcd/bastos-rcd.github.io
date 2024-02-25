@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Page } from '../models/page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -6,4 +8,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 
-export class MenuComponent { }
+export class MenuComponent {
+
+  public onPage = Page.HOME
+  public page = Page
+
+  constructor(
+    private route: Router
+  ) { }
+
+  ngOnInit() {
+    this.onChangePage()
+  }
+
+  onChangePage() {
+    setTimeout(() => {
+      if (this.route.url.endsWith('/')) {
+        this.onPage = Page.HOME
+        console.log("Nous sommes dans l'écran de gestion des utilisateurs.");
+      } else if (this.route.url.endsWith('/career')) {
+        this.onPage = Page.CAREER
+      }
+    }, 10);
+  }
+}
