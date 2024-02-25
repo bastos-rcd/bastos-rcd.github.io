@@ -2,5 +2,6 @@ export enum Page {
     HOME = '',
     CAREER = 'career',
     SKILLS = 'skills',
-    EXPERIENCES = 'experiences'
+    EXPERIENCES = 'experiences',
+    CONTACT = 'contact'
 }

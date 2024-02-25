@@ -32,6 +32,8 @@ export class MenuComponent {
         this.onPage = Page.SKILLS
       } else if (this.route.url.endsWith('/experiences')) {
         this.onPage = Page.EXPERIENCES
+      } else if (this.route.url.endsWith('/contact')) {
+        this.onPage = Page.CONTACT
       } else {
         this.route.navigateByUrl('/')
         this.onPage = Page.HOME
