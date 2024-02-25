@@ -16,6 +16,11 @@
                         'active': onPage == page.CAREER
                     }"><i class="fa-solid fa-person-chalkboard"></i> Parcours</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/skills" (click)="onChangePage()" [ngClass]="{
+                        'active': onPage == page.SKILLS
+                    }"><i class="fa-solid fa-microchip"></i> Compétences</a>
+                </li>
             </ul>
         </div>
     </div>

@@ -28,6 +28,8 @@ export class MenuComponent {
         console.log("Nous sommes dans l'écran de gestion des utilisateurs.");
       } else if (this.route.url.endsWith('/career')) {
         this.onPage = Page.CAREER
+      } else if (this.route.url.endsWith('/skills')) {
+        this.onPage = Page.SKILLS
       }
     }, 10);
   }

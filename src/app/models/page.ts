@@ -1,4 +1,5 @@
 export enum Page {
     HOME = '',
-    CAREER = 'career'
+    CAREER = 'career',
+    SKILLS = 'skills'
 }
