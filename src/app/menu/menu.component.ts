@@ -30,6 +30,11 @@ export class MenuComponent {
         this.onPage = Page.CAREER
       } else if (this.route.url.endsWith('/skills')) {
         this.onPage = Page.SKILLS
+      } else if (this.route.url.endsWith('/experiences')) {
+        this.onPage = Page.EXPERIENCES
+      } else {
+        this.route.navigateByUrl('/')
+        this.onPage = Page.HOME
       }
     }, 10);
   }

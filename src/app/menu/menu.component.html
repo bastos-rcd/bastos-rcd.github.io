@@ -21,6 +21,11 @@
                         'active': onPage == page.SKILLS
                     }"><i class="fa-solid fa-microchip"></i> Compétences</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/experiences" (click)="onChangePage()" [ngClass]="{
+                        'active': onPage == page.EXPERIENCES
+                    }"><i class="fa-solid fa-folder-open"></i> Expériences</a>
+                </li>
             </ul>
         </div>
     </div>
