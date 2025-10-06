@@ -5,14 +5,10 @@ interface Props {
   img: string;
   title: string;
   description: string;
-  github: string;
   skills: any[];
 }
 
-const { img, title, description, github, skills } = Astro.props;
-
-const { currentLocale } = Astro;
-const i18n = useI18n({ currentLocale });
+const { img, title, description, skills } = Astro.props;
 ---
 
 <div
