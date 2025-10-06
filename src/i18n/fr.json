@@ -86,7 +86,6 @@
       "IMG": "/img/projects/mobix.webp",
       "TITLE": "Mobix - Développeur Full-Stack & Consultant IA",
       "DESCRIPTION": "Outils et agents d'intelligence artificielle",
-      "GITHUB": "https://bastien-record.web.app/404",
       "SKILLS": [
         {
           "ID": "#realize",
@@ -109,7 +108,6 @@
       "IMG": "/img/projects/emcaffe.webp",
       "TITLE": "EMCA - Développeur Front-End",
       "DESCRIPTION": "Site web vitrine pour la présenation de l'entreprise EMCA et son produit",
-      "GITHUB": "https://github.com/bastos-rcd/EMCAFFE",
       "SKILLS": [
         {
           "ID": "#realize",
@@ -132,7 +130,6 @@
       "IMG": "/img/projects/spix.webp",
       "TITLE": "Spix Inbdustry - Développeur Mobile Android",
       "DESCRIPTION": "Samples d'application Android qui utilisent l'API de l'assistant vocal SPIX",
-      "GITHUB": "https://bastien-record.web.app/404",
       "SKILLS": [
         {
           "ID": "#realize",
@@ -171,7 +168,7 @@
       "LINK": "https://www.linkedin.com/in/bastien-record"
     },
     {
-      "IMG": "/img/contact/github-white.webp",
+      "IMG": "/img/contact/github.webp",
       "TITLE": "/bastos-rcd",
       "LINK": "https://www.github.com/bastos-rcd"
     }
