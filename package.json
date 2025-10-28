@@ -4,7 +4,6 @@
   "version": "1.0",
   "license": "MIT",
   "scripts": {
-    "start": "astro dev",
     "dev": "astro dev",
     "build": "astro check && astro build"
   },

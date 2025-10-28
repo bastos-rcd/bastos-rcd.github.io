@@ -7,10 +7,9 @@
   },
 
   "HEADER": {
-    "HOME": "Home",
-    "EDUCATION": "Education",
-    "SKILLS": "Skills",
     "PROJECTS": "Projects",
+    "EDUCATION": "Education",
+    "EXPERIENCES": "Experiences",
     "ABOUT": "About",
     "CONTACT": "Contact"
   },
