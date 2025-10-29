@@ -2,9 +2,9 @@
 import Layout from "@/layouts/layout.astro";
 
 import Header from "@/components/header/header.astro";
+import Hero from "@/components/hero/hero.astro";
 
 import { useI18n } from "@/i18n";
-import Home from "./Home.astro";
 
 const { currentLocale } = Astro;
 const i18n = useI18n({ currentLocale });
@@ -12,10 +12,10 @@ const i18n = useI18n({ currentLocale });
 
 <Layout title={i18n.SEO.TITLE}>
   <main class="w-full flex flex-col items-center gap-y-10">
-    <Header />
+    <Header i18n={i18n.HEADER} />
+    <Hero i18n={i18n.HERO} />
 
     <!--
-    <Home />
     <Education />
     <Skills />
     <Projects />

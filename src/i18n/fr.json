@@ -14,9 +14,11 @@
     "CONTACT": "Contact"
   },
 
-  "HOME": {
-    "TITLE": "Salut, je suis Bastien Record",
-    "DESCRIPTION": "Je suis développeur full-stack et consultant IA. J'aime le développement, les nouvelles technologies et je suis passionné par le sport.",
+  "HERO": {
+    "HI": "Salut,",
+    "TITLE": "je suis",
+    "NAME": "Bastien",
+    "JOB": "Développeur Full-Stack",
     "CV": "Mon CV"
   },
 

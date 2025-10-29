@@ -2,10 +2,10 @@
 import HeaderLink from "@/components/header/header-link.astro";
 import Language from "@/components/header/language.astro";
 
-import { useI18n } from "@/i18n";
-
-const { currentLocale } = Astro;
-const i18n = useI18n({ currentLocale });
+interface Props {
+  i18n: any;
+}
+const { i18n } = Astro.props;
 ---
 
 <header
@@ -17,11 +17,11 @@ const i18n = useI18n({ currentLocale });
 
   <!-- Desktop nav -->
   <nav class="hidden md:flex flex-row justify-center items-center gap-x-8">
-    <HeaderLink link="#projects" title={i18n.HEADER.PROJECTS} />
-    <HeaderLink link="#education" title={i18n.HEADER.EDUCATION} />
-    <HeaderLink link="#experiences" title={i18n.HEADER.EXPERIENCES} />
-    <HeaderLink link="#about" title={i18n.HEADER.ABOUT} />
-    <HeaderLink link="#contact" title={i18n.HEADER.CONTACT} />
+    <HeaderLink link="#projects" title={i18n.PROJECTS} />
+    <HeaderLink link="#education" title={i18n.EDUCATION} />
+    <HeaderLink link="#experiences" title={i18n.EXPERIENCES} />
+    <HeaderLink link="#about" title={i18n.ABOUT} />
+    <HeaderLink link="#contact" title={i18n.CONTACT} />
     <Language />
   </nav>
 
@@ -49,11 +49,11 @@ const i18n = useI18n({ currentLocale });
     id="menu"
     class="hidden absolute top-20 right-4 bg-[#1f1f1f] rounded-xl shadow-xl flex-col justify-center items-center p-4 gap-y-2"
   >
-    <HeaderLink link="#projects" title={i18n.HEADER.PROJECTS} />
-    <HeaderLink link="#education" title={i18n.HEADER.EDUCATION} />
-    <HeaderLink link="#experiences" title={i18n.HEADER.EXPERIENCES} />
-    <HeaderLink link="#about" title={i18n.HEADER.ABOUT} />
-    <HeaderLink link="#contact" title={i18n.HEADER.CONTACT} />
+    <HeaderLink link="#projects" title={i18n.PROJECTS} />
+    <HeaderLink link="#education" title={i18n.EDUCATION} />
+    <HeaderLink link="#experiences" title={i18n.EXPERIENCES} />
+    <HeaderLink link="#about" title={i18n.ABOUT} />
+    <HeaderLink link="#contact" title={i18n.CONTACT} />
     <Language />
   </nav>
 </header>

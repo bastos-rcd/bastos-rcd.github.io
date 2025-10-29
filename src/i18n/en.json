@@ -14,9 +14,11 @@
     "CONTACT": "Contact"
   },
 
-  "HOME": {
-    "TITLE": "Hi, I'm Bastien Record",
-    "DESCRIPTION": "I am a full-stack developer and AI consultant. I like development, new technologies, and I am passionate about sports.",
+  "HERO": {
+    "HI": "Hi,",
+    "TITLE": "I am",
+    "NAME": "Bastien",
+    "JOB": "Full-Stack Developer",
     "CV": "My CV"
   },
 

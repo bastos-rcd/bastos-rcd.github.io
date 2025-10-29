@@ -1,0 +1,33 @@
+---
+interface Props {
+  i18n: any;
+}
+const { i18n } = Astro.props;
+---
+
+<section
+  id="hero"
+  class="w-11/12 md:w-3/4 flex flex-col-reverse md:flex-row justify-between items-center pt-28 md:pt-32 md:px-4 gap-y-8 md:gap-y-0 md:gap-x-8"
+>
+  <div
+    class="w-full md:w-1/2 flex flex-col bg-[#1f1f1f] justify-between p-10 gap-y-4"
+  >
+    <h2 class="text-lg">{i18n.HI}</h2>
+    <h1 class="text-2xl">
+      {i18n.TITLE}
+      <span class="text-[#7C38EB] font-bold">{i18n.NAME}</span>
+    </h1>
+    <div class="w-full flex flex-row justify-between items-center">
+      <h3 class="text-sm md:text-lg font-thin">{i18n.JOB}</h3>
+      <a
+        href="/cv.pdf"
+        target="_blank"
+        class="text-sm md:text-lg font-extralight hover:text-[#7C38EB] underline underline-offset-8 hover:scale-110 transition-transform duration-300"
+      >
+        {i18n.CV}
+      </a>
+    </div>
+  </div>
+
+  <img src="/img/self.webp" class="w-96 rounded-full" />
+</section>
