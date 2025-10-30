@@ -22,163 +22,37 @@
     "CV": "My CV"
   },
 
-  "EDUCATION": [
-    {
-      "IMG": "/img/education/master.webp",
-      "TITLE": "MBA Full-Stack Developer",
-      "SCHOOL": "MyDigitalSchool | Labège (31)",
-      "DATE": "2025 - 2027"
-    },
-    {
-      "IMG": "/img/education/but.webp",
-      "TITLE": "Bachelor's degree in Computer Science",
-      "SCHOOL": "IUT Blagnac | University Toulouse 2 Jean Jaurès (31)",
-      "DATE": "2022 - 2025"
-    },
-    {
-      "IMG": "/img/education/bac.webp",
-      "TITLE": "STI2D option SIN Baccalaureate",
-      "SCHOOL": "Lycée Vincent Auriol | Revel (31)",
-      "DATE": "2020 - 2022"
-    }
-  ],
-
-  "SKILLS": [
-    {
-      "COLOR": "#e73030",
-      "ID": "realize",
-      "TITLE": "Realize",
-      "DESCRIPTION": "Develop (design, code, test, integrate) an IT solution for a client"
-    },
-    {
-      "COLOR": "#e79330",
-      "ID": "optimise",
-      "TITLE": "Optimize",
-      "DESCRIPTION": "Propose optimized IT applications based on specific criteria"
-    },
-    {
-      "COLOR": "#e7cc30",
-      "ID": "administer",
-      "TITLE": "Administer",
-      "DESCRIPTION": "Install, configure, make available, maintain infrastructures, services and networks"
-    },
-    {
-      "COLOR": "#30e757",
-      "ID": "manage",
-      "TITLE": "Manage",
-      "DESCRIPTION": "Design, manage, administer and exploit a company's data"
-    },
-    {
-      "COLOR": "#30abe7",
-      "ID": "drive",
-      "TITLE": "Drive",
-      "DESCRIPTION": "Satisfy user needs, organize and manage an IT project with traditional or agile methods"
-    },
-    {
-      "COLOR": "#000000",
-      "ID": "collaborate",
-      "TITLE": "Collaborate",
-      "DESCRIPTION": "Acquire, develop and exploit the skills necessary to work in a team"
-    }
-  ],
-
-  "PROJECTS": [
-    {
-      "IMG": "/img/projects/mobix.webp",
-      "TITLE": "Mobix - Full-Stack Developer & AI Consultant",
-      "DESCRIPTION": "Artificial intelligence tools and agents",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Réaliser"
-        },
-        {
-          "ID": "#optimise",
-          "COLOR": "#e79330",
-          "NAME": "Optimiser"
-        },
-        {
-          "ID": "manage",
-          "COLOR": "#30e757",
-          "NAME": "Gérer"
-        }
-      ]
-    },
-    {
-      "IMG": "/img/projects/emcaffe.webp",
-      "TITLE": "EMCA - Front-End Developers",
-      "DESCRIPTION": "Showcase website for the presentation of the company EMCA and its product",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Realize"
-        },
-        {
-          "ID": "#drive",
-          "COLOR": "#30abe7",
-          "NAME": "Drive"
-        },
-        {
-          "ID": "#collaborate",
-          "COLOR": "#000000",
-          "NAME": "Collaborate"
-        }
-      ]
-    },
-    {
-      "IMG": "/img/projects/spix.webp",
-      "TITLE": "Spix Inbdustry - Android Mobile Developer",
-      "DESCRIPTION": "Android app samples that use the SPIX voice assistant API",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Realize"
-        },
-        {
-          "ID": "#optimise",
-          "COLOR": "#e79330",
-          "NAME": "Optimize"
-        },
-        {
-          "ID": "#administer",
-          "COLOR": "#e7cc30",
-          "NAME": "Administer"
-        }
-      ]
-    }
-  ],
-
-  "ABOUT": {
-    "TITLE": "Bastien Record",
-    "DESCRIPTION1": "I am currently in an apprenticeship for a Full Stack MBA Developer, at the company Mobix, where I specialize in web development and AI. My professional goal is to become a full-stack developer, with a particular passion for innovative technologies and creating interactive tools.",
-    "DESCRIPTION2": "Apart from IT, sport plays an important place in my life. I played basketball for 9 years, and I had the opportunity to pass on my passion as a coach for 2 years. Following an injury, I had to stop playing basketball, but I found another way to stay active by devoting myself to bodybuilding."
-  },
-
-  "CONTACT": [
-    {
-      "IMG": "/img/contact/mail.webp",
-      "TITLE": "record.bastien@gmail.com",
-      "LINK": "mailto:record.bastien@gmail.com"
-    },
-    {
-      "IMG": "/img/contact/linkedin.webp",
-      "TITLE": "/in/bastien-record",
-      "LINK": "https://www.linkedin.com/in/bastien-record"
-    },
-    {
-      "IMG": "/img/contact/github.webp",
-      "TITLE": "/bastos-rcd",
-      "LINK": "https://www.github.com/bastos-rcd"
-    }
-  ],
-
-  "FOOTER": {
-    "TITLE": "Bastien Record",
-    "DESCRIPTION": "Inspired by",
-    "NAME": "midudev",
-    "LINK": "https://github.com/midudev/porfolio.dev"
+  "PROJECT": {
+    "TITLE": "My Projects",
+    "LIST": [
+      {
+        "IMG": "/img/project/the-gym.webp",
+        "TITLE": "TheGym",
+        "DESCRIPTION": "Web application for gym management.",
+        "LINK": "https://github.com/bastos-rcd/TheGym",
+        "SKILLS": ["Angular", "Symfony", "Bootstrap"]
+      },
+      {
+        "IMG": "/img/project/emcaffe.webp",
+        "TITLE": "EMCAFFE",
+        "DESCRIPTION": "Showcase website presenting an ecological and solidarity-based associative café.",
+        "LINK": "https://github.com/bastos-rcd/EMCAFFE",
+        "SKILLS": ["Astro", "Tailwind CSS", "Figma"]
+      },
+      {
+        "IMG": "/img/project/flopedt.webp",
+        "TITLE": "FlOpEdt",
+        "DESCRIPTION": "Web application for managing student schedules.",
+        "LINK": "https://github.com/bastos-rcd/FlOpEdt",
+        "SKILLS": ["Vue", "Django", "Docker"]
+      },
+      {
+        "IMG": "/img/project/front-market.webp",
+        "TITLE": "FrontMarket",
+        "DESCRIPTION": "E-commerce site for selling refurbished electronic devices.",
+        "LINK": "https://github.com/bastos-rcd/FrontMarket",
+        "SKILLS": ["PHP", "Java", "Python"]
+      }
+    ]
   }
 }

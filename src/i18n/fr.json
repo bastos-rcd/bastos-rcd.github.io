@@ -22,163 +22,37 @@
     "CV": "Mon CV"
   },
 
-  "EDUCATION": [
-    {
-      "IMG": "/img/education/master.webp",
-      "TITLE": "MBA Développeur Full-Stack",
-      "SCHOOL": "MyDigitalSchool | Labège (31)",
-      "DATE": "2025 - 2027"
-    },
-    {
-      "IMG": "/img/education/but.webp",
-      "TITLE": "Bachelor Universitaire de Technologie Informatique",
-      "SCHOOL": "IUT Blagnac | Université Toulouse 2 Jean Jaurès (31)",
-      "DATE": "2022 - 2025"
-    },
-    {
-      "IMG": "/img/education/bac.webp",
-      "TITLE": "Baccalauréat STI2D option SIN",
-      "SCHOOL": "Lycée Vincent Auriol | Revel (31)",
-      "DATE": "2020 - 2022"
-    }
-  ],
-
-  "SKILLS": [
-    {
-      "COLOR": "#e73030",
-      "ID": "realize",
-      "TITLE": "Réaliser",
-      "DESCRIPTION": "Développer (concevoir, coder, tester, intégrer) une solution informatique pour un client"
-    },
-    {
-      "COLOR": "#e79330",
-      "ID": "optimise",
-      "TITLE": "Optimiser",
-      "DESCRIPTION": "Proposer des applications informatiques optimisées en fonction de critères spécifiques"
-    },
-    {
-      "COLOR": "#e7cc30",
-      "ID": "administer",
-      "TITLE": "Administrer",
-      "DESCRIPTION": "Installer, configurer, mettre à disposition, maintenir des infrastructures, des services et des réseaux"
-    },
-    {
-      "COLOR": "#30e757",
-      "ID": "manage",
-      "TITLE": "Gérer",
-      "DESCRIPTION": "Concevoir, gérer, administrer et exploiter les données d'une entreprise"
-    },
-    {
-      "COLOR": "#30abe7",
-      "ID": "drive",
-      "TITLE": "Conduire",
-      "DESCRIPTION": "Satisfaire les besoins des utilisateurs, organiser et piloter un projet informatique avec des méthodes classiques ou agiles"
-    },
-    {
-      "COLOR": "#000000",
-      "ID": "collaborate",
-      "TITLE": "Collaborer",
-      "DESCRIPTION": "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler dans une équipe"
-    }
-  ],
-
-  "PROJECTS": [
-    {
-      "IMG": "/img/projects/mobix.webp",
-      "TITLE": "Mobix - Développeur Full-Stack & Consultant IA",
-      "DESCRIPTION": "Outils et agents d'intelligence artificielle",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Réaliser"
-        },
-        {
-          "ID": "#optimise",
-          "COLOR": "#e79330",
-          "NAME": "Optimiser"
-        },
-        {
-          "ID": "manage",
-          "COLOR": "#30e757",
-          "NAME": "Gérer"
-        }
-      ]
-    },
-    {
-      "IMG": "/img/projects/emcaffe.webp",
-      "TITLE": "EMCA - Développeur Front-End",
-      "DESCRIPTION": "Site web vitrine pour la présenation de l'entreprise EMCA et son produit",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Réaliser"
-        },
-        {
-          "ID": "#drive",
-          "COLOR": "#30abe7",
-          "NAME": "Conduire"
-        },
-        {
-          "ID": "#collaborate",
-          "COLOR": "#000000",
-          "NAME": "Collaborer"
-        }
-      ]
-    },
-    {
-      "IMG": "/img/projects/spix.webp",
-      "TITLE": "Spix Inbdustry - Développeur Mobile Android",
-      "DESCRIPTION": "Samples d'application Android qui utilisent l'API de l'assistant vocal SPIX",
-      "SKILLS": [
-        {
-          "ID": "#realize",
-          "COLOR": "#e73030",
-          "NAME": "Réaliser"
-        },
-        {
-          "ID": "#optimise",
-          "COLOR": "#e79330",
-          "NAME": "Optimiser"
-        },
-        {
-          "ID": "#administer",
-          "COLOR": "#e7cc30",
-          "NAME": "Administrer"
-        }
-      ]
-    }
-  ],
-
-  "ABOUT": {
-    "TITLE": "Bastien Record",
-    "DESCRIPTION1": "Je suis actuellement en alternance d'un MBA Développeur Full Stack, dans l'entreprise Mobix, où je me spécialise en développement web et IA. Mon objectif professionnel est de devenir développeur full-stack, avec une passion particulière pour les technologies innovantes et la création d'outils interactifs.",
-    "DESCRIPTION2": "En dehors de l'informatique, le sport occupe une place importante dans ma vie. J'ai pratiqué le basket pendant 9 ans, et j'ai eu l'opportunité de transmettre ma passion en tant que coach pendant 2 ans. À la suite d'une blessure, j'ai dû arrêter le basket, mais j'ai trouvé un autre moyen de rester actif en me consacrant à la culture physique."
-  },
-
-  "CONTACT": [
-    {
-      "IMG": "/img/contact/mail.webp",
-      "TITLE": "record.bastien@gmail.com",
-      "LINK": "mailto:record.bastien@gmail.com"
-    },
-    {
-      "IMG": "/img/contact/linkedin.webp",
-      "TITLE": "/in/bastien-record",
-      "LINK": "https://www.linkedin.com/in/bastien-record"
-    },
-    {
-      "IMG": "/img/contact/github.webp",
-      "TITLE": "/bastos-rcd",
-      "LINK": "https://www.github.com/bastos-rcd"
-    }
-  ],
-
-  "FOOTER": {
-    "TITLE": "Bastien Record",
-    "DESCRIPTION": "Inspiré par",
-    "NAME": "midudev",
-    "LINK": "https://github.com/midudev/porfolio.dev"
+  "PROJECT": {
+    "TITLE": "Mes Projets",
+    "LIST": [
+      {
+        "IMG": "/img/project/the-gym.webp",
+        "TITLE": "TheGym",
+        "DESCRIPTION": "Application web de gestion de salle de sport.",
+        "LINK": "https://github.com/bastos-rcd/TheGym",
+        "SKILLS": ["Angular", "Symfony", "Bootstrap"]
+      },
+      {
+        "IMG": "/img/project/emcaffe.webp",
+        "TITLE": "EMCAFFE",
+        "DESCRIPTION": "Site web vitrine présentant un café associatif écologique et solidaire.",
+        "LINK": "https://github.com/bastos-rcd/EMCAFFE",
+        "SKILLS": ["Astro", "Tailwind CSS", "Figma"]
+      },
+      {
+        "IMG": "/img/project/flopedt.webp",
+        "TITLE": "FlOpEdt",
+        "DESCRIPTION": "Application web de gestion d'emploi du temps pour les étudiants.",
+        "LINK": "https://github.com/bastos-rcd/FlOpEdt",
+        "SKILLS": ["Vue", "Django", "Docker"]
+      },
+      {
+        "IMG": "/img/project/front-market.webp",
+        "TITLE": "FrontMarket",
+        "DESCRIPTION": "Site e-commerce de vente d'appareils électroniques reconditionnés.",
+        "LINK": "https://github.com/bastos-rcd/FrontMarket",
+        "SKILLS": ["PHP", "Java", "Python"]
+      }
+    ]
   }
 }
