@@ -78,5 +78,23 @@
         "DESCRIPTION": "MyDigitalSchool | Labège (31)"
       }
     ]
+  },
+
+  "EXPERIENCE": {
+    "TITLE": "Mes Experiences",
+    "LIST": [
+      {
+        "IMG": "/img/experience/spix.webp",
+        "TITLE": "Spix Industry",
+        "DATE": "Février 2024 - Avril 2024",
+        "DESCRIPTION": "Développeur Mobile Android"
+      },
+      {
+        "IMG": "/img/experience/mobix.webp",
+        "TITLE": "Mobix",
+        "DATE": "Mars 2025 - En cours",
+        "DESCRIPTION": "Développeur Full Stack & Consultant IA"
+      }
+    ]
   }
 }

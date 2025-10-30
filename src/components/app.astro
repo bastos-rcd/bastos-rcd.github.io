@@ -5,6 +5,7 @@ import Header from "@/components/header/header.astro";
 import Hero from "@/components/hero/hero.astro";
 import Project from "@/components/project/project.astro";
 import Education from "@/components/education/education.astro";
+import Experience from "@/components/experience/experience.astro";
 
 import { useI18n } from "@/i18n";
 
@@ -18,5 +19,6 @@ const i18n = useI18n({ currentLocale });
     <Hero i18n={i18n.HERO} />
     <Project i18n={i18n.PROJECT} />
     <Education i18n={i18n.EDUCATION} />
+    <Experience i18n={i18n.EXPERIENCE} />
   </main>
 </Layout>
