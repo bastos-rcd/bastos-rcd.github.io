@@ -54,5 +54,29 @@
         "SKILLS": ["PHP", "Java", "Python"]
       }
     ]
+  },
+
+  "EDUCATION": {
+    "TITLE": "Mon Education",
+    "LIST": [
+      {
+        "IMG": "/img/education/bac.webp",
+        "TITLE": "BAC STI2D SIN option",
+        "DATE": "2020 - 2022",
+        "DESCRIPTION": "Lycée Vincent Auriol | Revel (31)"
+      },
+      {
+        "IMG": "/img/education/but.webp",
+        "TITLE": "BUT Computer Science",
+        "DATE": "2022 - 2025",
+        "DESCRIPTION": "IUT Blagnac | Blagnac (31)"
+      },
+      {
+        "IMG": "/img/education/master.webp",
+        "TITLE": "Master Full-Stack Developer",
+        "DATE": "2025 - 2027",
+        "DESCRIPTION": "MyDigitalSchool | Labège (31)"
+      }
+    ]
   }
 }
