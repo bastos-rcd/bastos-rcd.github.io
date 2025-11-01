@@ -1,0 +1,16 @@
+---
+interface Props {
+  contact: any;
+}
+const { contact } = Astro.props;
+---
+
+<div class="w-auto flex flex-nowrap justify-center items-center gap-x-4">
+  <img src={contact.IMG} class="w-12 bg-[#252525] rounded-xl p-1" />
+  <a
+    href={contact.LINK}
+    class="text-lg font-extralight hover:text-[#7C38EB] hover:underline hover:underline-offset-8 hover:scale-110 transition-transform duration-300"
+  >
+    {contact.TITLE}
+  </a>
+</div>

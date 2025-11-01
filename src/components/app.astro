@@ -7,6 +7,7 @@ import Project from "@/components/project/project.astro";
 import Education from "@/components/education/education.astro";
 import Experience from "@/components/experience/experience.astro";
 import About from "@/components/about/about.astro";
+import Contact from "@/components/contact/contact.astro";
 
 import { useI18n } from "@/i18n";
 
@@ -22,5 +23,6 @@ const i18n = useI18n({ currentLocale });
     <Education i18n={i18n.EDUCATION} />
     <Experience i18n={i18n.EXPERIENCE} />
     <About i18n={i18n.ABOUT} />
+    <Contact i18n={i18n.CONTACT} />
   </main>
 </Layout>

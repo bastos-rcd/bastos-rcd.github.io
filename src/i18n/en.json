@@ -106,5 +106,31 @@
     "IMG1": "/img/about/basket.webp",
     "IMG2": "/img/about/car.webp",
     "IMG3": "/img/about/gym.webp"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "LIST": [
+      {
+        "IMG": "/img/contact/email.webp",
+        "TITLE": "record.bastien@gmail.com",
+        "LINK": "mailto:record.bastien@gmail.com"
+      },
+      {
+        "IMG": "/img/contact/linkedin.webp",
+        "TITLE": "/in/bastien-record",
+        "LINK": "https://www.linkedin.com/in/bastien-record"
+      },
+      {
+        "IMG": "/img/contact/github.webp",
+        "TITLE": "/bastos-rcd",
+        "LINK": "https://www.github.com/bastos-rcd"
+      },
+      {
+        "IMG": "/img/contact/instagram.webp",
+        "TITLE": "@bastos_rcd",
+        "LINK": "https://www.instagram.com/bastos_rcd"
+      }
+    ]
   }
 }
