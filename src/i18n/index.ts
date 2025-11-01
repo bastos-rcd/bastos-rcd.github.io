@@ -1,5 +1,5 @@
-import FR from '../i18n/fr.json'
-import EN from '../i18n/en.json'
+import FR from '@/i18n/fr.json'
+import EN from '@/i18n/en.json'
 
 const LANGUAGES = {
     FRENCH: 'fr',

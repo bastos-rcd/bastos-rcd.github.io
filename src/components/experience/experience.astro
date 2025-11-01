@@ -1,0 +1,24 @@
+---
+import Title from "@/components/title.astro";
+import ExperienceCard from "@/components/experience/experience-card.astro";
+
+interface Props {
+  i18n: any;
+}
+const { i18n } = Astro.props;
+---
+
+<section
+  id="experience"
+  class="w-11/12 md:w-3/4 flex flex-col justify-center items-center gap-y-4 md:gap-y-6"
+>
+  <Title title={i18n.TITLE} />
+
+  <ol class="w-full justify-center items-center sm:flex">
+    {
+      i18n.LIST.map((experience: any) => (
+        <ExperienceCard experience={experience} />
+      ))
+    }
+  </ol>
+</section>

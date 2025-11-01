@@ -1,0 +1,33 @@
+---
+interface Props {
+  project: any;
+}
+const { project } = Astro.props;
+---
+
+<div class="w-full flex flex-col justify-center items-center gap-y-4">
+  <img src={project.IMG} class="w-full md:w-4/5 rounded-xl" />
+
+  <h1 class="w-full md:w-4/5 text-xl md:text-2xl">{project.TITLE}</h1>
+  <span class="w-full md:w-4/5 text-xs md:text-sm font-extralight"
+    >{project.DESCRIPTION}</span
+  >
+  <div class="w-full md:w-4/5 flex flex-row justify-between items-center">
+    <a
+      href={project.LINK}
+      target="_blank"
+      class="text-xs md:text-sm underline underline-offset-8 hover:scale-110 transition-transform duration-300"
+    >
+      GitHub
+    </a>
+    <div class="flex flex-row text-left justify-items-end items-end gap-x-2">
+      {
+        project.SKILLS.map((skill: any) => (
+          <span class="text-xs md:text-sm rounded-full text-white px-1 py-0.5 bg-[#7C38EB]">
+            {skill}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</div>

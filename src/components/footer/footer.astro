@@ -1,0 +1,18 @@
+---
+interface Props {
+  i18n: any;
+}
+const { i18n } = Astro.props;
+const YEAR = new Date().getFullYear();
+---
+
+<section class="w-full">
+  <p class="w-full text-xs md:text-base text-center">
+    © {YEAR}
+    Bastien Record -
+    {i18n.DESCRIPTION}
+    <a href={i18n.LINK} target="_blank" class="hover:text-[#7C38EB] underline">
+      {i18n.TITLE}
+    </a>
+  </p>
+</section>

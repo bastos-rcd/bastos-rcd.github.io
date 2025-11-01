@@ -1,0 +1,38 @@
+---
+interface Props {
+  experience: any;
+}
+const { experience } = Astro.props;
+---
+
+<li class="relative">
+  <div class="flex items-center">
+    <div
+      class="z-10 flex items-center justify-center w-8 h-8 bg-[#252525] rounded-full"
+    >
+      <svg
+        class="w-3 h-3 text-[#7C38EB]"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+        ></path>
+      </svg>
+    </div>
+    <div class="hidden sm:flex w-full bg-[#252525] h-0.5"></div>
+  </div>
+
+  <div class="mt-3 sm:pe-8 mb-4">
+    <img src={experience.IMG} class="mb-2 w-52 rounded-xl" />
+    <h3 class="text-xl text-[#7C38EB] font-bold">
+      {experience.TITLE}
+    </h3>
+    <time class="block mb-2 text-sm font-extralight"> {experience.DATE} </time>
+    <p class="text-base font-light">
+      {experience.DESCRIPTION}
+    </p>
+  </div>
+</li>
