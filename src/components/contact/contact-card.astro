@@ -9,6 +9,7 @@ const { contact } = Astro.props;
   <img src={contact.IMG} class="w-12 bg-[#252525] rounded-xl p-1" />
   <a
     href={contact.LINK}
+    target="_blank"
     class="text-lg font-extralight hover:text-[#7C38EB] hover:underline hover:underline-offset-8 hover:scale-110 transition-transform duration-300"
   >
     {contact.TITLE}
