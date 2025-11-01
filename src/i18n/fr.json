@@ -96,5 +96,15 @@
         "DESCRIPTION": "Développeur Full Stack & Consultant IA"
       }
     ]
+  },
+
+  "ABOUT": {
+    "TITLE": "À propos de moi",
+    "DESCRIPTION1": "Hey, je m'appelle Bastien Record. Je suis actuellement en alternance dans un Master Développeur Full Stack chez Mobix, où je combine développement web et intelligence artificielle.",
+    "DESCRIPTION2": "En dehors du code, le sport fait partie de mon équilibre. J’ai joué au basket pendant 9 ans et coaché pendant 2 ans. Aujourd’hui, je garde cette discipline à travers la culture physique et la force athlétique.",
+    "DESCRIPTION3": "Je suis aussi passionné par l’automobile et la Formule 1, l’équilibre parfait entre ingénierie de précision, adrénaline... et le doux son du “VROUM VROUM”.",
+    "IMG1": "/img/about/basket.webp",
+    "IMG2": "/img/about/car.webp",
+    "IMG3": "/img/about/gym.webp"
   }
 }

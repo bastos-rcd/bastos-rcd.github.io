@@ -96,5 +96,15 @@
         "DESCRIPTION": "Full Stack Developer & AI Consultant"
       }
     ]
+  },
+
+  "ABOUT": {
+    "TITLE": "About Me",
+    "DESCRIPTION1": "Hey, my name is Bastien Record. I am currently doing an apprenticeship in a Master Full Stack Developer at Mobix, where I combine web development and artificial intelligence.",
+    "DESCRIPTION2": "Outside of code, sports are part of my balance. I played basketball for 9 years and coached for 2 years. Today, I maintain this discipline through bodybuilding and powerlifting.",
+    "DESCRIPTION3": "I am also passionate about cars and Formula 1, the perfect balance between precision engineering, adrenaline... and the sweet sound of “VROUM VROUM”.",
+    "IMG1": "/img/about/basket.webp",
+    "IMG2": "/img/about/car.webp",
+    "IMG3": "/img/about/gym.webp"
   }
 }
