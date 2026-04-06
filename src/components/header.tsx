@@ -1,14 +1,26 @@
+import { useStore } from "../utils/store";
+
 import Link from "./ui/link";
 
-export default function Header() {
-  return (
-    <header className="w-full sticky top-0 z-50 bg-(--background) flex flex-row justify-center items-center gap-6 p-2">
-      <img src="/favicon.webp" className="w-14 h-14" />
+import Language from "./language";
 
-      <div className="flex flex-row gap-6">
-        <Link url="#" label="Accueil" />
-        <Link url="#" label="À propos" />
-        <Link url="#" label="Contact" />
+export default function Header() {
+  const { nav } = useStore();
+
+  return (
+    <header className="w-full sticky top-0 z-50 bg-(--background)">
+      <div className="w-full flex flex-row items-center justify-evenly sm:justify-center sm:gap-20 p-4">
+        {nav.map((item, index) => (
+          <Link
+            key={index}
+            url={() => {
+              window.location.href = item.link;
+            }}
+            label={item.name}
+          />
+        ))}
+
+        <Language />
       </div>
     </header>
   );
