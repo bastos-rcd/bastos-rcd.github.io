@@ -4,6 +4,7 @@ import { useStore } from "./utils/store";
 
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Work from "./components/work";
 
 export default function App() {
   const { loaded, setLoaded } = useStore();
@@ -17,10 +18,12 @@ export default function App() {
   }
 
   return (
-    <div className="w-full flex flex-col gap-6 sm:gap-10">
+    <div className="w-full flex flex-col gap-16 sm:gap-20">
       <Header />
 
       <Hero />
+
+      <Work />
     </div>
   );
 }

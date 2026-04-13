@@ -17,6 +17,17 @@ interface State {
     job: string;
     description: string;
   };
+
+  work: {
+    title: string;
+    projects: {
+      title: string;
+      description: string;
+      img: string;
+      link: { label: string; url: string };
+      stacks: string[];
+    }[];
+  };
 }
 
 export const useStore = create<State>((set) => ({
@@ -32,7 +43,6 @@ export const useStore = create<State>((set) => ({
 
   nav: [
     { link: "#", name: "ACCUEIL" },
-    { link: "#about", name: "À PROPOS" },
     { link: "#work", name: "PROJETS" },
     { link: "#contact", name: "CONTACT" },
   ],
@@ -41,6 +51,26 @@ export const useStore = create<State>((set) => ({
     title: "Salut, je suis Bastien",
     job: "Développeur Full Stack",
     description:
-      "En alternance chez MOBIX, j'allie le développement web et l'intégration Zoho à une rigueur forgée par neuf ans de basket-ball. Désormais pratiquant plusieurs sports (force athlétique, course à pied...) je nourris également une passion pour l'automobile, notamment pour la Formule 1.",
+      "J'allie le développement full stack à une rigueur forgée par neuf ans de basket-ball. Désormais pratiquant plusieurs sports (force athlétique, course à pied...) je nourris également une passion pour l'automobile, notamment pour la Formule 1.",
+  },
+
+  work: {
+    title: "Projets Récents",
+    projects: [
+      {
+        title: "TheGym",
+        description: "Application web de gestion de salle de sport.",
+        img: "/src/assets/card.png",
+        link: { label: "GitHub", url: "github.com" },
+        stacks: ["angular", "symfony", "bootstrap"],
+      },
+      {
+        title: "TheGym",
+        description: "Application web de gestion de salle de sport.",
+        img: "/src/assets/card.png",
+        link: { label: "GitHub", url: "github.com" },
+        stacks: ["angular", "symfony", "bootstrap"],
+      },
+    ],
   },
 }));

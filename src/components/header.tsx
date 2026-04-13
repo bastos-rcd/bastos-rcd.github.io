@@ -13,7 +13,7 @@ export default function Header() {
         {nav.map((item, index) => (
           <Link
             key={index}
-            url={() => {
+            click={() => {
               window.location.href = item.link;
             }}
             label={item.name}
