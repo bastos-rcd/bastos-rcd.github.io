@@ -13,7 +13,7 @@ export default function App() {
     useStore();
 
   useEffect(() => {
-    fetch(`/src/assets/values/${language}.json`)
+    fetch(`./values/${language}.json`)
       .then((data) => data.json())
       .then((json) => {
         setNav(json.nav);

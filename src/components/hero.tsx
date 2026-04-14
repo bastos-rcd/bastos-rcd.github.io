@@ -17,10 +17,7 @@ export default function Hero() {
         </div>
 
         <div className="order-1 sm:order-2 sm:col-span-2 flex justify-center">
-          <img
-            src="/src/assets/self.webp"
-            className="w-80 rounded-full object-cover"
-          />
+          <img src="self.webp" className="w-80 rounded-full object-cover" />
         </div>
       </div>
     </Section>
