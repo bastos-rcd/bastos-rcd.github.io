@@ -1,0 +1,73 @@
+{
+  "nav": [
+    { "link": "#", "name": "ACCUEIL" },
+    { "link": "#work", "name": "PROJETS" },
+    { "link": "#contact", "name": "CONTACT" }
+  ],
+
+  "hero": {
+    "title": "Salut, je suis Bastien",
+    "job": "Développeur Full Stack",
+    "description": "J'allie le développement full stack à une rigueur forgée par neuf ans de basket-ball. Désormais pratiquant plusieurs sports (force athlétique, course à pied...) je nourris également une passion pour l'automobile, notamment pour la Formule 1."
+  },
+
+  "work": {
+    "title": "Projets Récents",
+    "projects": [
+      {
+        "title": "MEDISYNC",
+        "description": "Application pour la santé qui numérise, automatise et simplifie l'organisation des responsables dans la génération des plannings.",
+        "img": "/src/assets/medisync.webp",
+        "link": {
+          "label": "Visiter le site",
+          "url": "https://medisync-landing.vercel.app/"
+        },
+        "stacks": ["angular", "tailwind", "sql"]
+      },
+      {
+        "title": "SmartRoom",
+        "description": "Application de gestion des salles",
+        "img": "/src/assets/smartroom.webp",
+        "link": {
+          "label": "GitHub",
+          "url": "https://github.com/bastos-rcd/SmartRoom"
+        },
+        "stacks": ["react", "docker", "sql"]
+      },
+      {
+        "title": "TheGym",
+        "description": "Application web de gestion de salle de sport.",
+        "img": "/src/assets/gym.webp",
+        "link": {
+          "label": "GitHub",
+          "url": "https://github.com/bastos-rcd/TheGym"
+        },
+        "stacks": ["angular", "symfony", "bootstrap"]
+      },
+      {
+        "title": "EMCAFFE",
+        "description": "Site web vitrine présentant un café associatif écologique et solidaire.",
+        "img": "/src/assets/emcaffe.webp",
+        "link": {
+          "label": "Visiter le site",
+          "url": "https://emcaffe-dev.pages.dev/"
+        },
+        "stacks": ["tailwind", "figma"]
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Me Contacter",
+    "email": "record.bastien@gmail.com",
+    "linkedin": "/in/bastien-record",
+    "github": "/bastos-rcd",
+    "instagram": "/bastos_rcd",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "button": "Envoyer"
+    }
+  }
+}
