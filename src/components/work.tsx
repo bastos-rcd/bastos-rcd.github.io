@@ -14,8 +14,8 @@ export default function Work() {
         <Title label={work.title} />
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-20">
-          {work.projects.map((project) => (
-            <div className="w-full flex flex-col gap-6">
+          {work.projects.map((project: any, index: number) => (
+            <div key={index} className="w-full flex flex-col gap-6">
               <img className="rounded-2xl" src={project.img} />
 
               <h3 className="font-semibold">{project.title}</h3>
@@ -26,14 +26,18 @@ export default function Work() {
                 <Link
                   variant="underline"
                   click={() => {
-                    window.location.href = project.link.url;
+                    window.open(
+                      project.link.url,
+                      "_blank",
+                      "noopener,noreferrer",
+                    );
                   }}
                   label={project.link.label}
                 />
 
                 <div className="flex flex-row justify-center items-center gap-2">
-                  {project.stacks.map((stack) => (
-                    <Icon icon={stack} />
+                  {project.stacks.map((stack: string, index: number) => (
+                    <Icon key={index} icon={stack} />
                   ))}
                 </div>
               </div>

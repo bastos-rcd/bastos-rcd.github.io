@@ -9,11 +9,21 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 
 export default function App() {
-  const { loaded, setLoaded } = useStore();
+  const { loaded, setLoaded, language, setNav, setHero, setWork, setContact } =
+    useStore();
 
   useEffect(() => {
-    setLoaded(true);
-  }, [loaded]);
+    fetch(`/src/assets/values/${language}.json`)
+      .then((data) => data.json())
+      .then((json) => {
+        setNav(json.nav);
+        setHero(json.hero);
+        setWork(json.work);
+        setContact(json.contact);
+
+        setLoaded(true);
+      });
+  }, [language]);
 
   if (!loaded) {
     return null;

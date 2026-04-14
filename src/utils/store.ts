@@ -7,41 +7,17 @@ interface State {
   language: string;
   changeLanguage: () => void;
 
-  nav: {
-    link: string;
-    name: string;
-  }[];
+  nav: any[];
+  setNav: (nav: any[]) => void;
 
-  about: {
-    title: string;
-    job: string;
-    description: string;
-  };
+  hero: any;
+  setHero: (hero: any) => void;
 
-  work: {
-    title: string;
-    projects: {
-      title: string;
-      description: string;
-      img: string;
-      link: { label: string; url: string };
-      stacks: string[];
-    }[];
-  };
+  work: any;
+  setWork: (work: any) => void;
 
-  contact: {
-    title: string;
-    email: string;
-    linkedin: string;
-    github: string;
-    instagram: string;
-    form: {
-      name: string;
-      email: string;
-      message: string;
-      button: string;
-    };
-  };
+  contact: any;
+  setContact: (contact: any) => void;
 }
 
 export const useStore = create<State>((set) => ({
@@ -49,56 +25,20 @@ export const useStore = create<State>((set) => ({
   setLoaded: (loaded: boolean) => set({ loaded }),
 
   language: "fr",
-  changeLanguage: () => {
+  changeLanguage: () =>
     set((state) => ({
       language: state.language === "fr" ? "en" : "fr",
-    }));
-  },
+    })),
 
-  nav: [
-    { link: "#", name: "ACCUEIL" },
-    { link: "#work", name: "PROJETS" },
-    { link: "#contact", name: "CONTACT" },
-  ],
+  nav: [],
+  setNav: (nav: any[]) => set({ nav }),
 
-  about: {
-    title: "Salut, je suis Bastien",
-    job: "Développeur Full Stack",
-    description:
-      "J'allie le développement full stack à une rigueur forgée par neuf ans de basket-ball. Désormais pratiquant plusieurs sports (force athlétique, course à pied...) je nourris également une passion pour l'automobile, notamment pour la Formule 1.",
-  },
+  hero: {},
+  setHero: (hero: any) => set({ hero }),
 
-  work: {
-    title: "Projets Récents",
-    projects: [
-      {
-        title: "TheGym",
-        description: "Application web de gestion de salle de sport.",
-        img: "/src/assets/card.png",
-        link: { label: "GitHub", url: "github.com" },
-        stacks: ["angular", "symfony", "bootstrap"],
-      },
-      {
-        title: "TheGym",
-        description: "Application web de gestion de salle de sport.",
-        img: "/src/assets/card.png",
-        link: { label: "GitHub", url: "github.com" },
-        stacks: ["angular", "symfony", "bootstrap"],
-      },
-    ],
-  },
+  work: {},
+  setWork: (work: any) => set({ work }),
 
-  contact: {
-    title: "Contact",
-    email: "record.bastien@gmail.com",
-    linkedin: "/in/bastien-record",
-    github: "/bastos-rcd",
-    instagram: "/bastos_rcd",
-    form: {
-      name: "Nom",
-      email: "Email",
-      message: "Message",
-      button: "Envoyer",
-    },
-  },
+  contact: {},
+  setContact: (contact: any) => set({ contact }),
 }));

@@ -6,17 +6,15 @@ import Icon from "./ui/icon";
 export default function Language() {
   const { setLoaded, changeLanguage } = useStore();
 
-  const handleChange = () => {
+  const handleChange = async () => {
     setLoaded(false);
-
     changeLanguage();
-
     setLoaded(true);
   };
 
   return (
     <Link
-      url={() => {
+      click={() => {
         handleChange();
       }}
       label={<Icon icon="lang" />}
