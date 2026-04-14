@@ -1,0 +1,73 @@
+{
+  "nav": [
+    { "link": "#", "name": "HOME" },
+    { "link": "#work", "name": "WORK" },
+    { "link": "#contact", "name": "CONTACT" }
+  ],
+
+  "hero": {
+    "title": "Hi, I'm Bastien",
+    "job": "Full Stack Developer",
+    "description": "I combine full stack development with a rigor forged by nine years of basketball. Now practicing several sports (strength, running...), I also have a passion for the automobile, especially for Formula 1."
+  },
+
+  "work": {
+    "title": "Recent Works",
+    "projects": [
+      {
+        "title": "MEDISYNC",
+        "description": "Application for health that digitizes, automates and simplifies the organization of managers in the generation of schedules.",
+        "img": "/medisync.webp",
+        "link": {
+          "label": "Visit the site",
+          "url": "https://medisync-landing.vercel.app/"
+        },
+        "stacks": ["angular", "tailwind", "sql"]
+      },
+      {
+        "title": "SmartRoom",
+        "description": "Web application for room management.",
+        "img": "/smartroom.webp",
+        "link": {
+          "label": "GitHub",
+          "url": "https://github.com/bastos-rcd/SmartRoom"
+        },
+        "stacks": ["react", "docker", "sql"]
+      },
+      {
+        "title": "TheGym",
+        "description": "Web application for gym management.",
+        "img": "/gym.webp",
+        "link": {
+          "label": "GitHub",
+          "url": "https://github.com/bastos-rcd/TheGym"
+        },
+        "stacks": ["angular", "symfony", "bootstrap"]
+      },
+      {
+        "title": "EMCAFFE",
+        "description": "Showcase website presenting an ecological and solidarity-based associative café.",
+        "img": "/emcaffe.webp",
+        "link": {
+          "label": "Visit the site",
+          "url": "https://emcaffe-dev.pages.dev/"
+        },
+        "stacks": ["tailwind", "figma"]
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "email": "record.bastien@gmail.com",
+    "linkedin": "/in/bastien-record",
+    "github": "/bastos-rcd",
+    "instagram": "/bastos_rcd",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send"
+    }
+  }
+}
