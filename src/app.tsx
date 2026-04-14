@@ -6,6 +6,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import Work from "./components/work";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function App() {
   const { loaded, setLoaded } = useStore();
@@ -27,6 +28,8 @@ export default function App() {
       <Work />
 
       <Contact />
+
+      <Footer />
     </div>
   );
 }
