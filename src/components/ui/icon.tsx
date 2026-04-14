@@ -4,12 +4,16 @@ import {
   IconBrandDjango,
   IconBrandDocker,
   IconBrandFigma,
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
   IconBrandPhp,
   IconBrandReact,
   IconBrandSymfony,
   IconBrandTailwind,
   IconBrandVue,
   IconLanguage,
+  IconMail,
   IconSql,
 } from "@tabler/icons-react";
 
@@ -45,5 +49,13 @@ export default function Icon({ icon }: Props) {
       return <IconBrandVue size={25} />;
     case "sql":
       return <IconSql size={25} />;
+    case "linkedin":
+      return <IconBrandLinkedin size={25} />;
+    case "github":
+      return <IconBrandGithub size={25} />;
+    case "instagram":
+      return <IconBrandInstagram size={25} />;
+    case "email":
+      return <IconMail size={25} />;
   }
 }

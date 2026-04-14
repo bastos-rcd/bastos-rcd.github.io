@@ -1,9 +1,9 @@
 import { useStore } from "../utils/store";
-import Icon from "./ui/icon";
-import Link from "./ui/link";
 
 import Section from "./ui/section";
 import Title from "./ui/title";
+import Link from "./ui/link";
+import Icon from "./ui/icon";
 
 export default function Work() {
   const { work } = useStore();

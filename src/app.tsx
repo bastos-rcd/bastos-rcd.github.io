@@ -5,6 +5,7 @@ import { useStore } from "./utils/store";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Work from "./components/work";
+import Contact from "./components/contact";
 
 export default function App() {
   const { loaded, setLoaded } = useStore();
@@ -24,6 +25,8 @@ export default function App() {
       <Hero />
 
       <Work />
+
+      <Contact />
     </div>
   );
 }

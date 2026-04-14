@@ -28,6 +28,20 @@ interface State {
       stacks: string[];
     }[];
   };
+
+  contact: {
+    title: string;
+    email: string;
+    linkedin: string;
+    github: string;
+    instagram: string;
+    form: {
+      name: string;
+      email: string;
+      message: string;
+      button: string;
+    };
+  };
 }
 
 export const useStore = create<State>((set) => ({
@@ -72,5 +86,19 @@ export const useStore = create<State>((set) => ({
         stacks: ["angular", "symfony", "bootstrap"],
       },
     ],
+  },
+
+  contact: {
+    title: "Contact",
+    email: "record.bastien@gmail.com",
+    linkedin: "/in/bastien-record",
+    github: "/bastos-rcd",
+    instagram: "/bastos_rcd",
+    form: {
+      name: "Nom",
+      email: "Email",
+      message: "Message",
+      button: "Envoyer",
+    },
   },
 }));
