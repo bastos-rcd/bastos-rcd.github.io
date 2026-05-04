@@ -2,13 +2,13 @@ import { useEffect } from "react";
 
 import { useStore } from "./utils/store";
 
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Work from "./components/work";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import { Header } from "./components/header";
+import { Hero } from "./components/hero";
+import { Work } from "./components/work";
+import { Contact } from "./components/contact";
+import { Footer } from "./components/footer";
 
-export default function App() {
+export function App() {
   const { loaded, setLoaded, language, setNav, setHero, setWork, setContact } =
     useStore();
 

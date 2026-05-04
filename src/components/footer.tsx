@@ -1,4 +1,4 @@
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="w-full bg-(--background)">
       <p className="text-center">

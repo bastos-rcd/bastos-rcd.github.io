@@ -1,9 +1,8 @@
 import { useStore } from "../utils/store";
 
-import Link from "./ui/link";
-import Icon from "./ui/icon";
+import { Link, Icon } from "./ui";
 
-export default function Language() {
+export function Language() {
   const { setLoaded, changeLanguage } = useStore();
 
   const handleChange = async () => {
