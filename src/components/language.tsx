@@ -17,7 +17,7 @@ export default function Language() {
       click={() => {
         handleChange();
       }}
-      label={<Icon icon="lang" />}
+      label={<Icon icon="fa-solid fa-language" />}
     />
   );
 }

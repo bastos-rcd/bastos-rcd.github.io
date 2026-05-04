@@ -34,22 +34,22 @@ export default function Contact() {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-20">
           <div className="flex flex-col justify-center items-start gap-10">
             <Item
-              icon="email"
+              icon="fa-regular fa-envelope"
               label={contact.email}
               link={`mailto:${contact.email}`}
             />
             <Item
-              icon="linkedin"
+              icon="fa-brands fa-linkedin-in"
               label={contact.linkedin}
               link={`https://linkedin.com${contact.linkedin}`}
             />
             <Item
-              icon="github"
+              icon="fa-brands fa-github"
               label={contact.github}
               link={`https://github.com${contact.github}`}
             />
             <Item
-              icon="instagram"
+              icon="fa-brands fa-instagram"
               label={contact.instagram}
               link={`https://instagram.com${contact.instagram}`}
             />

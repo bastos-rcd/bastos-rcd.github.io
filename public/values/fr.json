@@ -1,16 +1,23 @@
 {
   "nav": [
-    { "link": "#", "name": "ACCUEIL" },
-    { "link": "#work", "name": "PROJETS" },
-    { "link": "#contact", "name": "CONTACT" }
+    {
+      "link": "#",
+      "name": "ACCUEIL"
+    },
+    {
+      "link": "#work",
+      "name": "PROJETS"
+    },
+    {
+      "link": "#contact",
+      "name": "CONTACT"
+    }
   ],
-
   "hero": {
     "title": "Salut, je suis Bastien",
     "job": "Développeur Full Stack",
     "description": "J'allie le développement full stack à une rigueur forgée par neuf ans de basket-ball. Désormais pratiquant plusieurs sports (force athlétique, course à pied...) je nourris également une passion pour l'automobile, notamment pour la Formule 1."
   },
-
   "work": {
     "title": "Projets Récents",
     "projects": [
@@ -22,7 +29,11 @@
           "label": "Visiter le site",
           "url": "https://medisync-landing.vercel.app/"
         },
-        "stacks": ["angular", "tailwind", "sql"]
+        "stacks": [
+          "fa-brands fa-angular",
+          "fa-brands fa-tailwind-css",
+          "fa-brands fa-postgresql"
+        ]
       },
       {
         "title": "SmartRoom",
@@ -32,7 +43,11 @@
           "label": "GitHub",
           "url": "https://github.com/bastos-rcd/SmartRoom"
         },
-        "stacks": ["react", "docker", "sql"]
+        "stacks": [
+          "fa-brands fa-react",
+          "fa-brands fa-docker",
+          "fa-brands fa-postgresql"
+        ]
       },
       {
         "title": "TheGym",
@@ -42,7 +57,11 @@
           "label": "GitHub",
           "url": "https://github.com/bastos-rcd/TheGym"
         },
-        "stacks": ["angular", "symfony", "bootstrap"]
+        "stacks": [
+          "fa-brands fa-angular",
+          "fa-brands fa-symfony",
+          "fa-brands fa-bootstrap"
+        ]
       },
       {
         "title": "EMCAFFE",
@@ -52,11 +71,13 @@
           "label": "Visiter le site",
           "url": "https://emcaffe-dev.pages.dev/"
         },
-        "stacks": ["tailwind", "figma"]
+        "stacks": [
+          "fa-brands fa-tailwind-css",
+          "fa-brands fa-figma"
+        ]
       }
     ]
   },
-
   "contact": {
     "title": "Me Contacter",
     "email": "record.bastien@gmail.com",
