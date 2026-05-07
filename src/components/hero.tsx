@@ -1,8 +1,8 @@
 import { useStore } from "../utils/store";
 
-import Section from "./ui/section";
+import { Section } from "./ui";
 
-export default function Hero() {
+export function Hero() {
   const { hero } = useStore();
 
   return (

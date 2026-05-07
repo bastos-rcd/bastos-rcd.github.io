@@ -1,10 +1,9 @@
 import { useStore } from "../utils/store";
 
-import Link from "./ui/link";
+import { Link } from "./ui";
+import { Language } from "./language";
 
-import Language from "./language";
-
-export default function Header() {
+export function Header() {
   const { nav } = useStore();
 
   return (
