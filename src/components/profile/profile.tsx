@@ -3,7 +3,7 @@ import { ProfileList } from '@/components/profile/profile-list'
 export function Profile() {
 	return (
 		<div className="flex w-full flex-col items-center md:w-1/3">
-			<div className="z-10 w-1/2 rounded-4xl bg-(--yellow) md:w-2/3">
+			<div className="z-10 w-2/3 rounded-4xl bg-(--yellow)">
 				<img className="rounded-4xl" src="/profile.webp" />
 			</div>
 
