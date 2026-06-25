@@ -2,14 +2,16 @@
 @import 'tailwindcss';
 
 :root {
+	--bg-top: #142131;
+	--bg-bottom: #000113;
+
 	--black: #09090b;
 	--white: #f4f4f5;
 
-	--red: #f87171;
-	--yellow: #fdba74;
-	--green: #6ee7b7;
-	--blue: #60a5fa;
-	--violet: #e879f9;
+	--yellow: #ffb829;
+	--blue-light: #2f3d59;
+	--blue-dark: #0b1326;
+	--grey: #d9d9d9;
 }
 
 html,
@@ -24,25 +26,9 @@ body {
 	font-size: 16px;
 }
 
-h1 {
-	font-size: 28px;
-}
-
-h2 {
-	font-size: 20px;
-}
-
 @media (max-width: 640px) {
 	html,
 	body {
 		font-size: 12px;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	h2 {
-		font-size: 16px;
 	}
 }
