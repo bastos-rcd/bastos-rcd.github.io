@@ -2,12 +2,58 @@ import { ProjectsItem } from '@/components/projects/projects-item'
 
 const projectsData = [
 	{
-		title: 'Project Alpha',
+		title: 'MEDISYNC',
 		description:
-			'Une application web full-stack de gestion de flotte automobile avec tableau de bord en temps réel et suivi kilométrique.',
+			"Application pour la santé qui numérise, automatise et simplifie l'organisation des responsables dans la génération des plannings.",
+		img: '/medisync.webp',
+		stack: [
+			'fa-brands fa-angular',
+			'fa-brands fa-tailwind-css',
+			'fa-brands fa-postgresql',
+		],
+		link: 'https://medisync-landing.vercel.app/',
+	},
+	{
+		title: 'DartScore',
+		description:
+			'Application web mobile de gestion de comptages de points de fléchettes.',
+		img: '/dart-score.webp',
+		stack: [
+			'fa-brands fa-react',
+			'fa-brands fa-node-js',
+			'fa-brands fa-docker',
+		],
+		link: 'https://github.com/bastos-rcd/DartScore',
+	},
+	{
+		title: 'SmartRoom',
+		description: 'Application de gestion de réservations de salles.',
+		img: '/smart-room.webp',
+		stack: [
+			'fa-brands fa-react',
+			'fa-brands fa-docker',
+			'fa-brands fa-postgresql',
+		],
+		link: 'https://github.com/bastos-rcd/SmartRoom',
+	},
+	{
+		title: 'TheGym',
+		description: 'Application web de gestion de salle de sport.',
 		img: '/gym.webp',
-		stack: ['fab fa-js', 'fab fa-react', 'fab fa-node'],
-		link: 'https://github.com/...',
+		stack: [
+			'fa-brands fa-angular',
+			'fa-brands fa-symfony',
+			'fa-brands fa-bootstrap',
+		],
+		link: 'https://github.com/bastos-rcd/TheGym',
+	},
+	{
+		title: 'EMCAFFE',
+		description:
+			'Site web vitrine présentant un café associatif écologique et solidaire.',
+		img: '/emcaffe.webp',
+		stack: ['fa-brands fa-tailwind-css', 'fa-brands fa-figma'],
+		link: 'https://github.com/bastos-rcd/EMCAFFE',
 	},
 ]
 
